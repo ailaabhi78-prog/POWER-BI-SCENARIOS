@@ -1,0 +1,48 @@
+What is a Calendar Table in Power BI, and what is the main purpose of creating a Date Table?
+
+A Calendar Table (Date Table) in Power BI is a dedicated table that contains a continuous list of dates along with additional date-related columns like year, month, quarter, week, etc.
+A typical calendar table includes:
+Date , Year , Month (Number & Name) , Quarter , Week Number , Day (Weekday/Weekend) , Fiscal Year (optional)
+
+ Main Purpose of a Calendar Table
+
+1. Enable Time Intelligence Functions
+Power BI has built-in DAX functions like:
+TOTALYTD() (Year-to-date) 
+SAMEPERIODLASTYEAR() 
+DATEADD() 
+ These functions require a proper date table to work correctly.
+
+2. Handle Missing Dates
+Your dataset may not have all dates (e.g., no sales on some days).
+ A calendar table ensures:
+Continuous date range 
+Accurate trend analysis 
+
+3. Create Date Hierarchies
+You can easily drill down:
+Year → Quarter → Month → Day 
+This improves reporting and user interaction.
+
+4. Simplify Filtering & Slicing
+Instead of using dates from multiple tables:
+Use one central calendar table 
+Connect it to fact tables (Sales, Orders, etc.) 
+
+5. Support Multiple Date Columns
+Example:
+Order Date 
+Ship Date 
+Delivery Date 
+You can use the same calendar table with multiple relationships.
+
+6. Improve Performance & Data Modeling
+Follows star schema design 
+Acts as a dimension table 
+Keeps model clean and scalable
+
+
+
+
+ 
+ 
